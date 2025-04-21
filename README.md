@@ -57,7 +57,7 @@
 1. 必要なライブラリをインストールします。
 
     ```bash
-    pip install -r requiments.txt
+    pip install -r requirements.txt
     ```
 
 2. 環境変数を設定します。`.env` ファイルを作成し、以下の内容を記載してください。
