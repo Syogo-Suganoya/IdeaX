@@ -15,35 +15,48 @@ Additionally, the tool can automatically post the generated ideas to X.
 ## Key Features
 
 1. **Trend Retrieval**
-   Fetch trends from X and extract negative trends (mock data can also be used).
+
+    Fetch trends from X and extract negative trends (mock data can also be used).
 
 2. **Sentiment Analysis**
-   Analyze the content of trends and posts using AI to determine whether they are positive or negative.
+
+    Analyze the content of trends and posts using AI to determine whether they are positive or negative.
 
 3. **Idea Generation**
-   Generate concrete service ideas to address complaints based on negative trends.
+
+    Generate concrete service ideas to address complaints based on negative trends.
 
 4. **Format Conversion**
-   Convert the generated ideas into the following formats:
+
+    Convert the generated ideas into the following formats:
    - X post within 140 characters
    - Campfire-style project proposal
    - Qiita-style technical article
 
 5. **Automatic Posting**
-   Automatically post the generated content to X.
+
+    Automatically post the generated content to X.
 
 6. **File Output**
-   Save the generated ideas to a specified directory.
+
+    Save the generated ideas to a specified directory.
 
 ## Technologies Used
 
 - **Python**
+
   Used for the overall implementation of the program.
+
 - **Tweepy**
+
   Utilized for accessing the X API to fetch trends and post updates.
+
 - **Google GenAI**
+
   Uses the Gemini model for prompt-based generation.
+
 - **dotenv**
+
   Manages environment variables.
 
 ## Requirements
@@ -90,14 +103,23 @@ Additionally, the tool can automatically post the generated ideas to X.
 ## File Structure
 
 - `src/main.py`
+
   Main script that performs trend retrieval, sentiment analysis, idea generation, and posting.
+
 - `src/lib/`
+
   Modules containing APIs and utility functions.
+
 - `mock/`
+
   Stores mock data (trends and post content).
+
 - `prompt/`
+
   Stores AI prompt templates.
+
 - `output/`
+
   Directory for saving generated ideas.
 
 ## Notes
@@ -108,7 +130,10 @@ Additionally, the tool can automatically post the generated ideas to X.
 ## Challenges & Future Plans
 
 - **X API Costs**
-Currently, the cost of using the X API is high, making sufficient data collection difficult. This issue will be addressed once funding is secured through crowdfunding.
+
+  Currently, the cost of using the X API is high, making sufficient data collection difficult. This issue will be addressed once funding is secured through crowdfunding.
+
 - **Trend Categorization**
-Currently, each tweet is analyzed individually, but aggregating similar tweets could improve trend analysis accuracy.
+
+  Currently, each tweet is analyzed individually, but aggregating similar tweets could improve trend analysis accuracy.
 In the future, prompts will be refined for proper categorization to enhance classification accuracy.
